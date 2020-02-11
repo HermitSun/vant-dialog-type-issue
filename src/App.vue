@@ -8,11 +8,13 @@
 <script lang="ts">
 import Vue from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
+import { Dialog } from 'vant';
 
 export default Vue.extend({
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    [Dialog.Component.name]: Dialog.Component // ERROR: Property 'name' is a static member of type 'VanComponent'
   }
 });
 </script>

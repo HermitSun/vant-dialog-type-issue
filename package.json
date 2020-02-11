@@ -7,11 +7,15 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "vant-ui": "^2.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-typescript": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "ts-import-plugin": "^1.6.2",
     "typescript": "~3.7.5",
     "vue-template-compiler": "^2.6.11"
   }
