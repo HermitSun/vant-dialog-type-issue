@@ -15,6 +15,14 @@ export default Vue.extend({
   components: {
     HelloWorld,
     [Dialog.Component.name]: Dialog.Component // ERROR: Property 'name' is a static member of type 'VanComponent'
+  },
+  mounted() {
+    Dialog.alert({
+      title: '标题',
+      message: '弹窗内容'
+    }).then(() => {
+      // on close
+    });
   }
 });
 </script>
